@@ -4,7 +4,7 @@ import logo from '../../images/logo.svg';
 
 // We created a component with a simple arrow function.
 const Header = props => {
-  const { title = 'Pomodoro Timer', url = 'http://localhost:3000' } = props;
+  const { title = 'Welcome to React', url = 'http://localhost:3000' } = props;
 
   return (
     <header className="App-header">

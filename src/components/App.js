@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Xss from './Xss/Xss';
+import Calculator from './Calculator/Calculator';
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
 import Footer from '../shared/components/layout/Footer';
@@ -9,10 +9,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title="XSS Attacks" />
+        <Header title="Calculator" />
 
         <Content>
-          <Xss />
+          <Calculator />
         </Content>
 
         <Footer />
