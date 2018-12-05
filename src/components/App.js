@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Animation from './Animation/Animation';
+import Numbers from './Numbers/Numbers';
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
 import Footer from '../shared/components/layout/Footer';
@@ -9,10 +9,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title="Animations" />
+        <Header title="Understanding Pure Components" />
 
         <Content>
-          <Animation />
+          <Numbers />
         </Content>
 
         <Footer />
