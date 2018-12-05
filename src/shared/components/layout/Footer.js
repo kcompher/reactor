@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer style={{ marginTop: '100px' }}>
+  <footer>
     &copy; Codejobs {(new Date()).getFullYear()}
   </footer>
 );
