@@ -1,7 +1,15 @@
 /* eslint react/jsx-filename-extension: "off" */
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
-import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Routes
+import AppRoutes from './routes';
+
+render(
+  <Router>
+    <AppRoutes />
+  </Router>,
+  document.getElementById('root')
+);

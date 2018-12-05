@@ -1,20 +1,24 @@
 import React from 'react';
-import Person from './Person/Person';
+import { element } from 'prop-types';
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
 import Footer from '../shared/components/layout/Footer';
 import './App.css';
 
-const App = () => (
+const App = props => (
   <div className="App">
-    <Header title="Personal Information" />
+    <Header title="Routing" />
 
     <Content>
-      <Person />
+      {props.children}
     </Content>
 
     <Footer />
   </div>
 );
+
+App.propTypes = {
+  children: element
+};
 
 export default App;
